@@ -19,7 +19,7 @@ I used ChatGPT to create a Containerfile which configured: non-root user on an U
 I then just described the challenge to Google's Gemini 2.5 Pro and got underway.
 
 Some interesting challenges: 
-1. I had was that the agent had a difficult time with decoding the data because the curl progress report interrupted the stream on stdout. In the future, if I'm running `curl` with agents, I'll hide the progress report.
+1. The agent had a difficult time with decoding the data because the curl progress report interrupted the stream on stdout. In the future, if I'm running `curl` with agents, I'll hide the progress report.
 
 2. I'd never dealt with decoding hex encoded values, so I just wrote the encoded string to a file and had the LLM determine what the best course of action was.
 
