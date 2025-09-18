@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "opencode",
+  "provider": {
+    "google": {
+      "models": {},
+      "options": {
+        "apiKey": "{env:GOOGLE_API_KEY}"
+      }
+    }
+  },
+  "agent": {
+    "puzzle": {
+      "permission": {
+        "bash": {
+          "*": "allow",
+          "curl *": "ask"
+        },
+        "webfetch": "ask"
+      }
+    }
+  }
+}
