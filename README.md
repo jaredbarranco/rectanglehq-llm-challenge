@@ -25,10 +25,11 @@ Some interesting challenges:
 
 3. The container image didn't have some utilities setup - primarily no EDITOR or buffer handling. This meant anytime Opencode tried to write something to my clipboard, nothing was copied to the system buffers. Additionally, if I tried to open things in a default editor, nothing would happen. I ended up correcting these outside of my conversation thread.
 
+4. The final payload required me to include my name and email in the payload again, even though the submission instructions explicitly said: `Submit the optimal solution as {code, answer}`. This threw me for a loop when submitting, as I performed the final submission `curl` call myself.
+
 My takeaways here are:
 
-1. Overall, the LLM excelled at this task - because it effectively ended up being a DP Leetcode problem behind some curl calls. I really enjoyed the process of configuring the LLM to attack this problem, and working alongside it to unblock it from the limitations I placed on it. 
-
+1. Overall, the LLM excelled at this task - because it effectively ended up being a Dynamic Programming Leetcode problem behind some curl calls. I really enjoyed the process of configuring the LLM to attack this problem, and working alongside it to unblock it from the limitations I placed on it. 
 
 2. LLM Sandboxing seems like it could be beneficial and do-able for a small team. Obviously the concept of dev containers aren't new, but this is more pointed at security concerns, and less about environmental setup.
 
